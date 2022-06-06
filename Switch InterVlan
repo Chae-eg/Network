@@ -7,3 +7,15 @@ Switch(config-vlan)#exit
 Switch(config)#vlan 200
 Switch(config-vlan)#name Green
 Switch(config-vlan)#end
+
+//access port
+Switch(config)#int fa0/13
+Switch(config-if)#switchport mode access 
+Switch(config-if)#switchport access vlan 100
+Switch(config-if)#end
+
+Switch(config)#int fa0/14
+Switch(config-if)#switchport mode access 
+Switch(config-if)#switchport access vlan 200
+Switch(config-if)#end
+
