@@ -1,0 +1,9 @@
+//switch set name & Vlan
+Switch#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#vlan 100
+Switch(config-vlan)#name Blue
+Switch(config-vlan)#exit
+Switch(config)#vlan 200
+Switch(config-vlan)#name Green
+Switch(config-vlan)#end
